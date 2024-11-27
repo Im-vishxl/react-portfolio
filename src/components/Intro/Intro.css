@@ -1,0 +1,90 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins";
+    font-weight: 800;
+    font-style: normal;
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.introText {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.introName {
+    color: #ff004f;
+}
+
+.introPara {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.btn {
+    background: white;
+    width: 135px;
+    height: 50px;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #eae7e7;
+    
+}
+
+.btn:active {
+    transform: scale(1); /* Reset size when the button is clicked */
+    box-shadow: 0px 4px 8px #6f6468; /* Adjust shadow for click effect */
+}
+
+
+
+
+.btnImg {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    object-fit: contain;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width: 840px) {
+    .introContent {
+        font-size: 10vw;
+        padding-top: 25px;
+        margin-top: -100px;
+    }
+    .introText {
+        font-size: 2rem;
+    }
+}
